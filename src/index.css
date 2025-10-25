@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.center{
+    @apply flex items-center justify-center
+}
+
+.active{
+    background-color: #1abc9c;
+    border-radius: 6px;
+
+}
+.row{
+    @apply flex items-center justify-center flex-wrap
+}
