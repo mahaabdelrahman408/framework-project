@@ -6,7 +6,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import useTitle from "../../hooks/useTitle";
 
 const images = Object.values(
-  import.meta.glob("../../assets/*.{png,jpg,jpeg,PNG,JPEG}", {
+  import.meta.glob("../../assets/*.png", {
     as: "url",
     eager: true,
   })

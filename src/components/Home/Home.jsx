@@ -5,7 +5,7 @@ import useTitle from '../../hooks/useTitle'
 import { useEffect } from 'react';
 export default function Home() {
     useEffect(() => {
-    document.title = "Framework"; // يرجع العنوان الأصلي
+    document.title = "Framework"; 
   }, []);
   return <>
   <img src={test} className=' w-1/5 mx-auto mt-5' alt="" />
