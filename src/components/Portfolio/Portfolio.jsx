@@ -4,15 +4,20 @@ import Heading from "../Heading/Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import useTitle from "../../hooks/useTitle";
-
-const images = Object.values(
-  import.meta.glob("../../assets/*.png", {
-    as: "url",
-    eager: true,
-  })
-);
-
+import port1 from "../../assets/port1.png";
+import port2 from "../../assets/port2.png";
+import port3 from "../../assets/port3.png";
+import port4 from "../../assets/port4.png";
+import port5 from "../../assets/port5.png";
+import port6 from "../../assets/port6.png";
+// const images = Object.values(
+//   import.meta.glob('../../assets/*.{png,jpg,jpeg,PNG,JPEG}', {
+//     as: "url",
+//     eager: true,
+//   })
+// );
 export default function Portfolio() {
+  const images=[port1,port2,port3,port4,port5,port6]
   const [isModalOpan, setisModalOpan] = useState(false);
   const [imageSource, setimageSource] = useState("");
   useTitle("Portfolio")
